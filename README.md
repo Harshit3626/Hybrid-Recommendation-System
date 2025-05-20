@@ -27,3 +27,55 @@ To run the notebook:
 pip install fuzzywuzzy
 pip install scikit-surprise
 
+
+Dataset
+Source: Kaggle (final_dataset.csv)
+
+Contains preprocessed movie metadata including:
+
+Movie titles
+
+Genres
+
+Tags/descriptions
+
+User ratings
+
+This dataset is already cleaned and formatted for direct use in both content-based and collaborative recommendation models.
+
+🤖 Models Used
+🔍 Content-Based Filtering
+Technique: TF-IDF Vectorization
+
+Similarity Measure: Cosine Similarity
+
+Goal: Recommend movies similar in content to a given movie.
+
+👥 Collaborative Filtering
+Technique: Matrix Factorization using SVD from the Surprise library
+
+Goal: Recommend movies liked by users with similar taste profiles.
+
+🧪 How It Works
+User Inputs:
+
+A user ID
+
+A favorite movie title
+
+System Generates:
+
+🎯 Content-based recommendations based on TF-IDF similarity
+
+🤝 Collaborative recommendations based on SVD predictions
+
+✅ Merged hybrid list that combines both
+
+📊 Sample Output
+Content-Based: Suggests movies similar in description/genre to the selected movie.
+
+Collaborative Filtering: Suggests what similar users also enjoyed.
+
+Hybrid Result: Combines both insights for personalized, relevant recommendations.
+
+
